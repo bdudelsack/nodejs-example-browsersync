@@ -1,0 +1,26 @@
+{
+  "name": "node-project-v2",
+  "version": "1.0.0",
+  "description": "",
+  "authors": [
+    "Boris Dudelsack <boris.dudelsack@hs-flensburg.de>"
+  ],
+  "main": "src/index.js",
+  "scripts": {
+    "start": "browser-sync --files dist/**/* --files index.html",
+    "build": "babel src/ -d dist",
+    "watch": "babel src/ -d dist --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "browser-sync": "^2.26.7",
+    "@babel/cli": "^7.10.1",
+    "@babel/core": "^7.10.1",
+    "@babel/preset-env": "^7.10.1",
+    "@babel/polyfill": "^7.10.1",
+    "@babel/plugin-proposal-class-properties": "^7.10.1"
+  }
+}
